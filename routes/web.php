@@ -26,32 +26,32 @@ Route::get('/', function () {
         'content' => 'home/home/index'
     ];
     return view('home.layouts.wrapper', $data);
-});
+})->name('home');
 
 Route::get('/about', function () {
     $data = [
         'content' => 'home/about/index'
     ];
     return view('home.layouts.wrapper', $data);
-});
+})->name('about');
 
 Route::get('/services', function () {
     $data = [
         'content' => 'home/services/index'
     ];
     return view('home.layouts.wrapper', $data);
-});
+})->name('services');
 
 Route::get('/contacts', function () {
     $data = [
         'content' => 'home/contacts/index'
     ];
     return view('home.layouts.wrapper', $data);
-});
+})->name('contacts');
 
 Route::get('/media', function () {
     $data = [
         'content' => 'home/media/index'
     ];
     return view('home.layouts.wrapper', $data);
-});
+})->name('media');

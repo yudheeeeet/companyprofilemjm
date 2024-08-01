@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PortofolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,3 +58,5 @@ Route::get('/media', function () {
     ];
     return view('home.layouts.wrapper', $data);
 })->name('media');
+
+Route::get('/admin/admin', [AdminController::class, 'admin'])->name('admin');

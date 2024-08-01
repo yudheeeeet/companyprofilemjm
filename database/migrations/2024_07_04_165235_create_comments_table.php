@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 200);
+            $table->string('telp', 50);
+            $table->string('email')->unique();
+            $table->string('company', 150);
+            $table->string('wa', 50);
             $table->timestamps();
         });
     }

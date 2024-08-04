@@ -60,3 +60,6 @@ Route::get('/media', function () {
 })->name('media');
 
 Route::get('/admin/admin', [AdminController::class, 'admin'])->name('admin');
+
+Route::resource('/comment', CommentController::class);
+Route::resource('/portofolio', PortofolioController::class);

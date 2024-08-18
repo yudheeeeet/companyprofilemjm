@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Comment;
 
 class CommentController extends Controller
 {
@@ -27,7 +28,24 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'nama' => 'required',
+            'telp' => 'required',
+            'wa' => 'required',
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+
+        $comment = Comment::create([
+            'nama' => $request->nama,
+            'telp' => $request->telp,
+            'email' => $request->email,
+            'wa' => $request->wa,
+            'company' => $request->company,
+            'message' => $request->message
+        ]);
+
+        return redirect()->route('contacts');
     }
 
     /**

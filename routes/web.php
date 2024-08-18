@@ -63,3 +63,6 @@ Route::get('/admin/admin', [AdminController::class, 'admin'])->name('admin');
 
 Route::resource('/comment', CommentController::class);
 Route::resource('/portofolio', PortofolioController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

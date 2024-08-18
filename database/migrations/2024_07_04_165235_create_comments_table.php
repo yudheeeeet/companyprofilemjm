@@ -16,8 +16,9 @@ return new class extends Migration
             $table->string('nama', 200);
             $table->string('telp', 50);
             $table->string('email')->unique();
-            $table->string('company', 150);
+            $table->string('company', 150)->nullable();
             $table->string('wa', 50);
+            $table->longText('message');
             $table->timestamps();
         });
     }

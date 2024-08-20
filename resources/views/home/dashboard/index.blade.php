@@ -1,5 +1,3 @@
-@extends('template.master')
-@section('content')
 <body id="body">
     {{--todo Header--}}
     <div class="header">
@@ -240,4 +238,3 @@
     </div>
     {{-- todo Portofolio --}}
 </body>
-@endsection

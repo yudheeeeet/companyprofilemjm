@@ -5,8 +5,10 @@
             <div class="box">
                 <i class="fa-solid fa-star"></i>
                 <h1>Contact Kami</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias asperiores, voluptatibus
-                    sunt doloribus corrupti.</p>
+                <p>Hubungi kami tentang apapun yang berkaitan dengan perusahaan atau
+                    layanan kami. Kami akan melakukan yang terbaik untuk menghubungi Anda 
+                    sesegera mungkin.
+                </p>
             </div>
             <div class="form-contact">
                 <form action="{{route('comment.store')}}" method="POST">

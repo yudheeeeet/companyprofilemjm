@@ -31,6 +31,14 @@ Route::get('/', function () {
     return view('home.layouts.wrapper', $data);
 })->name('home');
 
+Route::get('/dashboard', function () {
+    // return view('home.index');
+    $data = [
+        'content' => 'home/dashboard/index'
+    ];
+    return view('home.layouts.wrapper', $data);
+})->name('dashboard');
+
 Route::get('/about', function () {
     $data = [
         'content' => 'home/about/index'

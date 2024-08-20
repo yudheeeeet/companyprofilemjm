@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('dashboard')}}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('comment.index')}}">Comments</a>
@@ -21,6 +21,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('portofolio.index')}}">Portofolio</a>
                     </li>
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <button class="btn btn-primary">Logout</button>
+                    </form>
                 </ul>
             </div>
         </div>
